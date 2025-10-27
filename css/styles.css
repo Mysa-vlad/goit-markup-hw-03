@@ -24,10 +24,28 @@ h1, h2, h3, h4, p{
 img{
     display: block;
 }
+.head{
+    display: flex;
+}
 .container { 
-max-width: 1158px;
-margin: 0;
-padding: 0 15px;
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.top-line{
+    display: flex;
+      padding-top: 24px;
+    padding-bottom: 24px;
+    flex-direction: row;
+    padding-left: 156px;
+    justify-content: space-between;
+    padding-right: 156px;
+    border-bottom: 1px solid #e7e9fc
+}
+.main-navigate{
+    display: flex;
+    gap: 76px;
+    align-items: center;
 }
 .logo{
     font-size: 18px;
@@ -37,16 +55,47 @@ padding: 0 15px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     color: #4d5ae5;
+    margin-right: 76px
 }
 .studio{
     color: #2e2f42 ;
+}
+.navigate{
+    display: flex;
+    gap: 40px;
+}
+.navigator{
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
+}
+.navigator:hover,
+.navigator:focus{
+    color: #404bbf;
+}
+.adres{
+    display: flex;
+    gap: 40px;
+    font-style: normal;
+
+}
+.mail{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+.mail:hover,
+.mail:focus{
+    color: #404bbf;
 }
 .hero-image, 
 .foot{
     background-color: #2E2F42;
 }
 .hero-image{
-    padding: 188px 472px;
+    padding: 188px 0;
     gap: 48px;
     display: flex;
     flex-direction: column;
@@ -57,11 +106,12 @@ padding: 0 15px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
+    max-width: 496px;
 }
 .button{
-    background-color: #4D5AE5;
+    background-color: #4d5ae5;
     color: #FFFFFF;
-    border: #4D5AE5;
+    border: none;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -71,6 +121,10 @@ padding: 0 15px;
     margin: 0 auto;
   display: block;
   padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 .button:hover,
 .button:focus{
@@ -78,17 +132,43 @@ padding: 0 15px;
 }
 .first-section{
     display: flex;
-    padding: 120px 156px;
+    padding: 120px 0;
 }
-.first-section ul{
+.list-first-section{
     display: flex;
     flex-direction: row;
     gap: 24px;
 }
-.first-section ul li{
+.item-first-section{
     display: flex;
     flex-direction: column;
     gap: 8px;
+    width: calc((100% - 72px) / 4);
+}
+.visually-hidden{
+    position: absolute;
+ width: 1px;
+ height: 1px;
+ margin: -1px;
+ border: 0;
+ padding: 0;
+ white-space: nowrap;
+ clip-path: inset(100%);
+ clip: rect(0 0 0 0);
+ overflow: hidden;
+}
+.strategy{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+.strategy-p{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 .second-section{
     background-color: #F4F4FD;
@@ -96,6 +176,14 @@ padding: 0 15px;
     padding: 120px 156px;
     flex-direction: column;
     gap: 72px;
+}
+.title-our-team{
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
 }
 .second-section ul{
     display: flex;
@@ -108,56 +196,6 @@ padding: 0 15px;
     gap: 8px;
     text-align: center;
     padding: 32px 67px;
-}
-.footer-p{
-    color: #F4F4FD;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
-.studio-footer{
-    color: #f4f4fd;
-}
-.navigator{
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
-.navigator:hover,
-.navigator:focus{
-    color: #404bbf;
-}
-.adres{
-    font-style: normal;
-}
-.mail{
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-.mail:hover,
-.mail:focus{
-    color: #404bbf;
-}
-.strategy{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
-.strategy-p{
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
-.title-our-team{
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2e2f42;
 }
 .card{
     background-color: #FFFFFF;
@@ -174,62 +212,6 @@ padding: 0 15px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-}
-.title-portfolio{
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2e2f42;
-}
-.role-app{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
-.role{
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-.top-line{
-    display: flex;
-      padding-top: 24px;
-    padding-bottom: 24px;
-    flex-direction: row;
-    padding-left: 156px;
-    justify-content: space-between;
-    padding-right: 156px;
-    border-bottom: 1px solid #e7e9fc
-}
-.visually-hidden{
-    position: absolute;
- width: 1px;
- height: 1px;
- margin: -1px;
- border: 0;
- padding: 0;
- white-space: nowrap;
- clip-path: inset(100%);
- clip: rect(0 0 0 0);
- overflow: hidden;
-}
-.navigate{
-    display: flex;
-    gap: 40px;
-}
-.main-navigate{
-    display: flex;
-    gap: 76px;
-}
-.adres ul{
-    display: flex;
-    gap: 40px
-;
 }
 .third-section{
     display: flex;
@@ -253,12 +235,45 @@ border-color: #E7E9FC;
 
 
 }
+.title-portfolio{
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
+}
 .text-portfolio{
     display: flex;
     flex-direction: column;
     padding: 32px 16px;
     gap: 8px;
 }
+.role-app{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+.role{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.footer-p{
+    color: #F4F4FD;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.studio-footer{
+    color: #f4f4fd;
+}
+
+
+
 .foot{
     display: flex;
     padding: 100px 156px;
