@@ -215,11 +215,11 @@ img{
 }
 .third-section{
     display: flex;
-    padding: 120px 156px;
+    padding: 120px 0;
     flex-direction: column;
     gap: 72px;
 }
-.third-section ul{
+.list-third-section{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -242,6 +242,7 @@ border-color: #E7E9FC;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    margin-bottom: 72px;
 }
 .text-portfolio{
     display: flex;
@@ -272,11 +273,14 @@ border-color: #E7E9FC;
     color: #f4f4fd;
 }
 
-
+.footer-logo{
+    display: inline-block; 
+    margin-bottom: 16px;
+}
 
 .foot{
     display: flex;
-    padding: 100px 156px;
+   padding: 100px 0;
 }
 .foot-text{
     display: flex;
