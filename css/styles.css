@@ -173,7 +173,7 @@ img{
 .second-section{
     background-color: #F4F4FD;
     display: flex;
-    padding: 120px 156px;
+    padding: 120px 0;
     flex-direction: column;
     gap: 72px;
 }
@@ -184,8 +184,9 @@ img{
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    margin-bottom: 72px;
 }
-.second-section ul{
+.list-second-section{
     display: flex;
     gap: 24px;
     justify-content: space-between;
@@ -195,10 +196,11 @@ img{
     flex-direction: column;
     gap: 8px;
     text-align: center;
-    padding: 32px 67px;
+    padding: 32px 0
 }
 .card{
     background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
 }
 .people{
      font-weight: 500;
@@ -206,6 +208,7 @@ img{
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 .people-role{
     font-size: 16px;
@@ -225,10 +228,11 @@ img{
     flex-wrap: wrap;
     gap: 24px;
     justify-content: space-between;
+    row-gap: 48px;
 }
-.third-section ul li{
+.item-third-section{
     border-width: 1px, 1px, 1px, 1px;
-
+width: calc((100% - 48px) / 3);
 border-style: solid;
 
 border-color: #E7E9FC;
@@ -249,6 +253,7 @@ border-color: #E7E9FC;
     flex-direction: column;
     padding: 32px 16px;
     gap: 8px;
+    border: 1px solid #e7e9fc;
 }
 .role-app{
     font-weight: 500;
@@ -256,6 +261,7 @@ border-color: #E7E9FC;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 .role{
     font-size: 16px;
