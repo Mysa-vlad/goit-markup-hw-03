@@ -39,6 +39,10 @@ img{
     padding-right: 156px;
     border-bottom: 1px solid #e7e9fc;
 }
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
 .main-navigate{
     display: flex;
     gap: 76px;
@@ -101,9 +105,10 @@ img{
     color: #FFFFFF;
     font-size: 56px;
     line-height: 1.07;
-    text-align: center;
     letter-spacing: 0.02em;
     max-width: 496px;
+    margin: 0 auto;
+  text-align: center;
 }
 .button{
     background-color: #4d5ae5;
@@ -280,6 +285,13 @@ border-color: #E7E9FC;
 .footer-logo{
     display: inline-block; 
     margin-bottom: 16px;
+       font-size: 18px;
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #4d5ae5;
 }
 
 .foot{
